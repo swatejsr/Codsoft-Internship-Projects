@@ -1,0 +1,93 @@
+/\*\*/ Start Generation Here */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+    margin: auto; /* Center the calculator horizontally */
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #f3f3f3;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.operator {
+    background-color: #f9a825;
+    color: white;
+}
+
+button.operator:hover {
+    background-color: #f57f17;
+}
+
+button.equal-sign {
+    background-color: #4caf50;
+    color: white;
+    grid-column: span 2;
+}
+
+button.equal-sign:hover {
+    background-color: #388e3c;
+}
+
+button.all-clear {
+    background-color: #e57373;
+    color: white;
+}
+
+button.all-clear:hover {
+    background-color: #d32f2f;
+}
+
+button.decimal {
+    background-color: #64b5f6;
+    color: white;
+}
+
+button.decimal:hover {
+    background-color: #1976d2;
+}
+
+button:not(.operator):not(.equal-sign):not(.all-clear):not(.decimal) {
+    background-color: #e0e0e0;
+}
+
+button:not(.operator):not(.equal-sign):not(.all-clear):not(.decimal):hover {
+    background-color: #bdbdbd;
+}
+/\*\*/ End Generation Here */
